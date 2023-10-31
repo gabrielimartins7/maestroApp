@@ -23,17 +23,20 @@ export default function App() {
         style={styles.input}
         placeholder='E-mail'
         onChangeText={setEmail}
+        testID='input-email'
       />
       <TextInput
         style={styles.input}
-        placeholder='Password'
+        placeholder='Senha'
         secureTextEntry
         onChangeText={setPassword}
+        testID='input-password'
       />
 
       <TouchableOpacity 
       style={styles.button}
       onPress={handleSignIn}
+      testID='button-signIn'
       >
         <Text style={styles.buttonTitle}>
           Entrar

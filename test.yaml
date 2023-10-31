@@ -1,0 +1,32 @@
+appId: com.maestro.app
+env:
+    EMAIL: "gabrieli@gmail.com"
+    PASSWORD: "123"
+---
+- openLink: exp://127.0.0.1:8081
+
+- tapOn:
+    id: input-email
+- inputText: ${EMAIL}
+
+- tapOn:
+    id: input-password
+- inputText: ${PASSWORD}
+
+
+- tapOn:
+    id: button-signIn
+
+- assertVisible: "Acesso Liberado!"
+
+
+
+
+
+
+
+# - inputRandomEmail // para gerar email aleatorios
+# - inputRandomNumber:
+#     length: 6  // para gerar senha aleatorias
+
+# - hideKeyboard //se quiser fechar o teclado do app
